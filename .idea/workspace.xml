@@ -75,7 +75,7 @@
   </component>
   <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="backend" />
+      <module name="customer-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.customer.backend.BackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
