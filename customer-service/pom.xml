@@ -6,15 +6,18 @@
 		<groupId>com.microserviceApp</groupId>
 		<artifactId>service-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../service-parent/pom.xml</relativePath>
+		<relativePath/>
 	</parent>
-	<groupId>com.microserviceApp</groupId>
-	<artifactId>backend</artifactId>
+	<artifactId>customer-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backend</name>
+	<name>customer-service</name>
 	<description>Back-end project for Spring Boot</description>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
