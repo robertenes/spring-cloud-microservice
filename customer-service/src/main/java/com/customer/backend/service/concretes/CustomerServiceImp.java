@@ -19,8 +19,8 @@ import static com.customer.backend.util.constant.CustomerConstant.*;
 @Service
 public class CustomerServiceImp implements CustomerService {
 
-    private CustomerRepository customerRepository;
-    private CustomerConverter customerConverter;
+    private final CustomerRepository customerRepository;
+    private final CustomerConverter customerConverter;
 
     public CustomerServiceImp(final CustomerRepository customerRepository,
                               final CustomerConverter customerConverter) {
@@ -31,14 +31,15 @@ public class CustomerServiceImp implements CustomerService {
     @Override
     public CustomerResponseDTO getCustomerByCustomerNumber(String customerNumber) {
 
-        final CustomerEntity entity = customerRepository.findByCustomerNumber(customerNumber).orElseThrow(() -> new CustomerNotFoundException(CUSTOMER_NOT_FOUND));
+        final CustomerEntity entity = customerRepository.findByCustomerNumberAndActiveTrue(customerNumber).orElseThrow(() -> new CustomerNotFoundException(CUSTOMER_NOT_FOUND));
         return customerConverter.convertToResponseDTO(entity);
     }
 
     @Override
     public List<CustomerResponseDTO> getCustomers() {
 
-        return customerConverter.convertToResponseDTOList(customerRepository.findAll());
+        List<CustomerEntity> customerEntityList = customerRepository.findAllByActiveTrue();
+        return customerConverter.convertToResponseDTOList(customerEntityList);
     }
 
     @Override
@@ -56,7 +57,7 @@ public class CustomerServiceImp implements CustomerService {
     @Transactional
     public CustomerResponseDTO updateCustomer(CustomerRequestDTO customerRequestDTO, String customerNumber) {
 
-        final CustomerEntity customerEntity = customerRepository.findByCustomerNumber(customerNumber).orElseThrow(() -> new CustomerNotFoundException(CUSTOMER_NOT_FOUND));
+        final CustomerEntity customerEntity = customerRepository.findByCustomerNumberAndActiveTrue(customerNumber).orElseThrow(() -> new CustomerNotFoundException(CUSTOMER_NOT_FOUND));
         final CustomerEntity customerEntityUpdated = customerConverter.convertToEntity(customerRequestDTO);
         customerEntityUpdated.setId(customerEntity.getId());
         customerEntityUpdated.setCreatedAt(customerEntity.getCreatedAt());
@@ -69,15 +70,16 @@ public class CustomerServiceImp implements CustomerService {
     @Override
     @Transactional
     public Result deleteCustomer(String customerNumber) {
-        CustomerEntity customerEntity = customerRepository.findByCustomerNumber(customerNumber).orElseThrow(() -> new CustomerNotFoundException(CUSTOMER_NOT_FOUND));
+        CustomerEntity customerEntity = customerRepository.findByCustomerNumberAndActiveTrue(customerNumber).orElseThrow(() -> new CustomerNotFoundException(CUSTOMER_NOT_FOUND));
         customerEntity.setActive(false);
+        customerRepository.save(customerEntity);
         return new Result(CUSTOMER_DELETE_SUCCESS);
     }
 
     @Override
     public boolean existCustomerNameControl(String value) {
 
-        return customerRepository.existsByCustomerNumber(value);
+        return customerRepository.existsByCustomerNumberAndActive(value);
     }
 
 }

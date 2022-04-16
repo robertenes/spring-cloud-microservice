@@ -5,31 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0235864f-c1cd-4d12-ad3b-a41e4e743ed0" name="Changes" comment="Eureka server created and customer service registered eureka server">
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/customer-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/eureka-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/microserviceApp/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/card-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8041309c-1bb3-4321-bd3a-0a535af73722.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8041309c-1bb3-4321-bd3a-0a535af73722/storage_v2/_src_/schema/system.L3Icyw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8041309c-1bb3-4321-bd3a-0a535af73722/storage_v2/_src_/schema/system_schema.sb0HgQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice/backend.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice/backend.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/service/concretes/CustomerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/service/concretes/CustomerServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-parent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,9 +61,10 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config-server/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Dev/vodafone/postpaid" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -108,10 +98,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Spring Boot.CardServiceApplication">
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="customer-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.customer.backend.BackendApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" temporary="true">
+      <module name="card-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.card.backend.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.card.backend.CardServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,6 +131,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microserviceApp.configserver.ConfigServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,6 +139,7 @@
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microserviceApp.eurekaserver.EurekaServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,13 +147,23 @@
     <configuration name="MicroserviceAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="microservice-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microserviceApp.microserviceapp.MicroserviceAppApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BackendApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.MicroserviceAppApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.CardServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CardServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Spring Boot.CardApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +178,8 @@
       <workItem from="1649552917996" duration="6028000" />
       <workItem from="1649561894863" duration="140000" />
       <workItem from="1649599259265" duration="29238000" />
-      <workItem from="1649867242759" duration="9192000" />
+      <workItem from="1649867242759" duration="14675000" />
+      <workItem from="1650032044308" duration="9946000" />
     </task>
     <task id="LOCAL-00001" summary="edited projec name">
       <created>1649634279990</created>
@@ -169,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649634279991</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Eureka server created and customer service registered eureka server">
+      <created>1649900791129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649900791129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +216,17 @@
     <MESSAGE value="edited projec name" />
     <MESSAGE value="Eureka server created and customer service registered eureka server" />
     <option name="LAST_COMMIT_MESSAGE" value="Eureka server created and customer service registered eureka server" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

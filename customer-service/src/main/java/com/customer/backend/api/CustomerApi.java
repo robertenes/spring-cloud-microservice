@@ -60,7 +60,7 @@ public class CustomerApi {
     }
 
     @DeleteMapping("/deleteCustomer/{customerNumber}")
-    public ResponseEntity<Result> deleteCustomer(@PathVariable String customerNumber) {
+    public ResponseEntity<Result> deleteCustomer(@PathVariable("customerNumber") String customerNumber) {
         return new ResponseEntity<>(customerService.deleteCustomer(customerNumber), HttpStatus.OK);
     }
 
