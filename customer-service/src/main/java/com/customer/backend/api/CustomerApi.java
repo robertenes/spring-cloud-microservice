@@ -1,7 +1,7 @@
 package com.customer.backend.api;
 
+import com.common.backend.dto.CustomerResponseDTO;
 import com.customer.backend.model.dto.CustomerRequestDTO;
-import com.customer.backend.model.dto.CustomerResponseDTO;
 import com.customer.backend.service.abstracts.CustomerService;
 import com.customer.backend.shared.result.Result;
 import com.netflix.discovery.EurekaClient;
@@ -20,16 +20,9 @@ public class CustomerApi {
 
     private final CustomerService customerService;
 
-    @Lazy
-    private final EurekaClient eurekaClient;
-
-    @Value("${spring.application.name}")
-    private String appName;
-
-    public CustomerApi(final CustomerService customerService, EurekaClient eurekaClient) {
+    public CustomerApi(final CustomerService customerService) {
 
         this.customerService = customerService;
-        this.eurekaClient = eurekaClient;
     }
 
     @GetMapping("/getCustomerByCustomerNumber/{customerNumber}")
@@ -64,9 +57,4 @@ public class CustomerApi {
         return new ResponseEntity<>(customerService.deleteCustomer(customerNumber), HttpStatus.OK);
     }
 
-    @GetMapping("/greeting")
-    public String greeting() {
-        return String.format(
-                "Hello from '%s'!", eurekaClient.getApplication(appName).getName());
-    }
 }
