@@ -1,7 +1,7 @@
 package com.customer.backend.model.converter;
 
+import com.common.backend.dto.CustomerResponseDTO;
 import com.customer.backend.model.dto.CustomerRequestDTO;
-import com.customer.backend.model.dto.CustomerResponseDTO;
 import com.customer.backend.model.entity.CustomerEntity;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Component
 public class CustomerConverter {
 
-    private ModelMapper mapper;
+    private final ModelMapper mapper;
 
     public CustomerConverter(final ModelMapper modelMapper) {
         this.mapper = modelMapper;

@@ -4,21 +4,71 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0235864f-c1cd-4d12-ad3b-a41e4e743ed0" name="Changes" comment="Eureka server created and customer service registered eureka server">
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/card-service.yml" afterDir="false" />
+    <list default="true" id="0235864f-c1cd-4d12-ad3b-a41e4e743ed0" name="Changes" comment="RabbitMq added, Hystrix added, Spring gateway added, notification service addded, zipkin server added">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mernis_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/Deneme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/Try.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/config/rabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/message/RabbitMqSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/notification-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/zipkin-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/gateway/backend/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/gateway/backend/HystrixController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/com/hystrix/backend/HystrixApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/MenisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLDateTimeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLExtendedSoapSerializationEnvelope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLKPSPublicSoap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLKPSPublicSoap12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLMarshalGuid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLStandardDateTimeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification/backend/NotificationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification/backend/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification/backend/service/NotificationDistributionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/dto/CardNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin-server/src/main/java/com/zipkin/backend/ZipkinServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zipkin-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/978e88b1-3b06-4e58-af51-c3f3ca2c0a5f.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/CardServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/CardServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/config/InitialCreateDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/config/InitialCreateDataConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/service/serviceImpl/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/service/serviceImpl/CardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card-service/target/classes/com/card/backend/CardServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/target/classes/com/card/backend/CardServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/card-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/card-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/customer-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/eureka-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/eureka-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice-config/card-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice-config/card-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice-config/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice-config/customer-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice-config/eureka-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice-config/eureka-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/CustomerServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/service/concretes/CustomerServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/service/concretes/CustomerServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/resources/docker-compose.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/microserviceApp/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/eurekaserver/backend/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/microserviceApp/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/CustomerServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/CustomerServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/FeignClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/config/FeignClientConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +79,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,6 +112,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+  </component>
   <component name="ProjectId" id="27aKm7isF9GP44lrVS46fGt99SH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,7 +122,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="cassandra" />
+    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql&#10;elasticsearch" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -63,32 +131,47 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Dev/vodafone/postpaid" />
+    <property name="database.data.extractors.current.export.id" value="CSV-Groovy.csv.groovy" />
+    <property name="database.data.extractors.current.id" value="CSV-Groovy.csv.groovy" />
+    <property name="jdk.selected.JAVA_MODULE" value="corretto-11" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/springframework/boot/zipkin-server/10.0.1/zipkin-server-10.0.1.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.card.backend.model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enesc\Desktop\microservice-app\mernis\src\main\java" />
+      <recent name="C:\Users\enesc\Desktop\microservice-app\config-server\src\main\resources\microservice-config" />
+      <recent name="C:\Users\enesc\Desktop\microservice-app\card-service\src\main\java\com\card\backend" />
       <recent name="C:\Users\enesc\Desktop\microservice-app\config-server\src\main\resources" />
       <recent name="C:\Users\enesc\Desktop\microservice-app\eureka-server\src\main\resources" />
-      <recent name="C:\Users\enesc\Desktop\microservice-app\config-server\src\main\resources\microservice-config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\enesc\Desktop\microservice-app\mernis\src\main\java\com\mernis\backend\mernisAPI" />
+      <recent name="C:\Users\enesc\Desktop\microservice-app\mernis\src\main\java" />
+      <recent name="C:\Users\enesc\Desktop\microservice-app\mernis\src\main\java\com\mernis\backend" />
       <recent name="C:\Users\enesc\Desktop\microservice-app\config-server\src\main\resources" />
       <recent name="C:\Users\enesc\Desktop\microservice-app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.card.backend.config" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
       <command value="mvn compile" />
+      <command value="mvn clean install" />
+      <command value="mvn dependency:resolve-plugins" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -99,25 +182,36 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CardServiceApplication">
-    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="customer-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.customer.backend.BackendApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="MenisApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mernis.backend.MenisApplication" />
+      <module name="mernis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mernis.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" activateToolWindowBeforeRun="false" temporary="true">
+    <configuration name="MernisServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MernisServiceApplication" />
+      <module name="mernis-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="card-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.card.backend.*" />
-          <option name="ENABLED" value="false" />
+          <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.card.backend.CardServiceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="INCLUDE_PROVIDED_SCOPE" value="false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,7 +221,7 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.microserviceApp.configserver.*" />
-          <option name="ENABLED" value="true" />
+          <option name="ENABLED" value="false" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microserviceApp.configserver.ConfigServerApplication" />
@@ -136,10 +230,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microserviceApp.eurekaserver.EurekaServerApplication" />
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="customer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.customer.backend.CustomerServiceApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eurekaserver.backend.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gateway.backend.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrix-dashboard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hystrix.backend.HystrixApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -152,10 +267,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.notification.backend.NotificationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZipkinServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="zipkin-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipkin.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zipkin.backend.ZipkinServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.BackendApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Application.MernisServiceApplication" />
+      <item itemvalue="Application.MenisApplication" />
+      <item itemvalue="Spring Boot.CustomerServiceApplication" />
       <item itemvalue="Spring Boot.MicroserviceAppApplication" />
+      <item itemvalue="Spring Boot.NotificationServiceApplication" />
+      <item itemvalue="Spring Boot.HystrixApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication (1)" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ZipkinServerApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.CardServiceApplication" />
     </list>
@@ -163,7 +304,9 @@
       <list>
         <item itemvalue="Spring Boot.CardServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Spring Boot.CardApplication" />
+        <item itemvalue="Spring Boot.ZipkinServerApplication" />
+        <item itemvalue="Application.MenisApplication" />
+        <item itemvalue="Application.MernisServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +322,24 @@
       <workItem from="1649561894863" duration="140000" />
       <workItem from="1649599259265" duration="29238000" />
       <workItem from="1649867242759" duration="14675000" />
-      <workItem from="1650032044308" duration="9946000" />
+      <workItem from="1650032044308" duration="12128000" />
+      <workItem from="1650136846256" duration="20916000" />
+      <workItem from="1650210531147" duration="41106000" />
+      <workItem from="1650353364115" duration="4329000" />
+      <workItem from="1650492881449" duration="32356000" />
+      <workItem from="1650751576372" duration="435000" />
+      <workItem from="1650896719432" duration="7330000" />
+      <workItem from="1650980277273" duration="7478000" />
+      <workItem from="1651051321596" duration="6639000" />
+      <workItem from="1651126756576" duration="3910000" />
+      <workItem from="1651236765001" duration="2146000" />
+      <workItem from="1651532115973" duration="16801000" />
+      <workItem from="1651671093270" duration="31946000" />
+      <workItem from="1651957922849" duration="14896000" />
+      <workItem from="1652097519489" duration="2436000" />
+      <workItem from="1652182277008" duration="1736000" />
+      <workItem from="1652424217994" duration="8673000" />
+      <workItem from="1652563274934" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="edited projec name">
       <created>1649634279990</created>
@@ -195,7 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649900791129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Card service module created and connect to config server and eureka server. // Docker compose file created in docs file. // Elastic Search and Mysql image added to project.">
+      <created>1650076200933</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650076200933</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Connect to Mysql Database, FeignClient module created, ElasticSearch implementation edited, ModelMapper Configuration created">
+      <created>1650583931675</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650583931675</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,15 +389,43 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edited projec name" />
     <MESSAGE value="Eureka server created and customer service registered eureka server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eureka server created and customer service registered eureka server" />
+    <MESSAGE value="Card service module created and connect to config server and eureka server. // Docker compose file created in docs file. // Elastic Search and Mysql image added to project." />
+    <MESSAGE value="Connect to Mysql Database, FeignClient module created, ElasticSearch implementation edited, ModelMapper Configuration created" />
+    <MESSAGE value="RabbitMq added, Hystrix added, Spring gateway added, notification service addded, zipkin server added" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMq added, Hystrix added, Spring gateway added, notification service addded, zipkin server added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java</url>
-          <line>63</line>
+          <line>56</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardApi.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/card-service/src/main/java/com/card/backend/service/serviceImpl/CardServiceImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardApi.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardApi.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

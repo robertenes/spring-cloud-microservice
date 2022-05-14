@@ -1,0 +1,47 @@
+#https://cloud.spring.io/spring-cloud-gateway/reference/html/
+server:
+  port: 8989
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone=http://localhost:8761/eureka/:
+    register-with-eureka: false
+  instance:
+    preferIpAddress: true
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: customer-service
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/customer/**
+          filters:
+            - RewritePath=/(?<segment>.*), /$\{segment}
+            - name: Hystrix
+              args:
+                name: customer-service
+                fallbackuri: forward:/fb/customer
+
+        - id: card-service
+          uri: lb://CARD-SERVICE
+          predicates:
+            - Path=/card/**
+          filters:
+            - RewritePath=/(?<segment>.*), /$\{segment}
+            - name: Hystrix
+              args:
+                name: card-service
+                fallbackuri: forward:/fb/card
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

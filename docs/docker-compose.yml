@@ -9,12 +9,23 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: microservice-app
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
 
   elasticsearch:
-    image: elasticsearch:8.1.2
+    image: elasticsearch:7.6.2
     ports:
       - 9200:9200
       - 9300:9300
     environment:
       discovery.type: single-node
+
+  msrabbitmq:
+    image: rabbitmq:3.9-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mernis:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mernis_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="mernis/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mernis" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

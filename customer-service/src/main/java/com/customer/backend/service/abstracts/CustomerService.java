@@ -1,7 +1,7 @@
 package com.customer.backend.service.abstracts;
 
+import com.common.backend.dto.CustomerResponseDTO;
 import com.customer.backend.model.dto.CustomerRequestDTO;
-import com.customer.backend.model.dto.CustomerResponseDTO;
 import com.customer.backend.shared.result.Result;
 
 import java.util.List;

@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2 (2)" type="JAX-WS">
+    <properties version="Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mernis/lib/saaj-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jsr181-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jaxws-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/policy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/mimepull.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/management-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jaxws-tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/FastInoset.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/gmbal-api-only.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jaxws-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/jaxb-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/ha-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/streambuffer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/woodstox-core-asl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/stax2-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/saaj-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mernis/lib/stax-ex.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
