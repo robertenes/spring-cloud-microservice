@@ -2,7 +2,7 @@
 
 Microservice architecture Web Application with Spring Cloud.
 
-###Technologies:
+###T echnologies:
 
 -Spring Cloud
 -Spring Boot
