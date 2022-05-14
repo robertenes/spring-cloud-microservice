@@ -4,17 +4,17 @@ The project is a simple level rest service project created by customer and card 
 
 ### Technologies:
 
--Spring Cloud
--Spring Boot
--Spring Gateway
--Eureka Server
--Docker for database images
--Casandra db for customer objects
--Mysql db for card objects
--ElasticSearch db for card objects
--Hystrix
--RabbitMQ 
--ModelMapper
--Zipkin
--Feign Client
+- Spring Cloud
+- Spring Boot
+- Spring Gateway
+- Eureka Server
+- Docker for database images
+- Casandra db for customer objects
+- Mysql db for card objects
+- ElasticSearch db for card objects
+- Hystrix
+- RabbitMQ 
+- ModelMapper
+- Zipkin
+- Feign Client
 
