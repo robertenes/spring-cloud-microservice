@@ -1,4 +1,4 @@
-# Microservice architecture Web Application with Spring Cloud.
+Spring Boot Web Application with Microservice architecture
 
 ### Technologies:
 
