@@ -7,13 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mernis-service" />
         <module name="config-server" />
+        <module name="customer-service" />
+        <module name="hystrix-dashboard" />
+        <module name="gateway-server" />
+        <module name="mernis" />
+        <module name="zipkin-server" />
         <module name="card-service" />
         <module name="eureka-server" />
-        <module name="customer-service" />
         <module name="service-common" />
+        <module name="notification-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mernis-service" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,9 +30,15 @@
       <module name="config-server" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="gateway-server" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
+      <module name="mernis" options="-parameters" />
+      <module name="mernis-service" options="-parameters" />
       <module name="microservice-app" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
       <module name="service-common" options="-parameters" />
       <module name="service-parent" options="-parameters" />
+      <module name="zipkin-server" options="-parameters" />
     </option>
   </component>
 </project>

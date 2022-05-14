@@ -1,14 +1,16 @@
 package com.card.backend.api;
 
 
+import com.card.backend.Deneme;
 import com.card.backend.model.dto.CardRequestDTO;
 import com.card.backend.model.dto.CardResponseDTO;
 import com.card.backend.service.CardService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
 @RestController
@@ -16,6 +18,10 @@ import java.util.List;
 public class CardApi {
 
     private final CardService cardService;
+
+
+    Logger logger = LoggerFactory.getLogger(CardApi.class);
+
 
     public CardApi(final CardService cardService) {
         this.cardService = cardService;
@@ -28,6 +34,7 @@ public class CardApi {
 
     @GetMapping("/getAll")
     public ResponseEntity<List<CardResponseDTO>> getAll() {
+        logger.info("Elmaaa");
         return new ResponseEntity<>(cardService.getAll(), HttpStatus.OK);
     }
 
@@ -37,7 +44,7 @@ public class CardApi {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<CardResponseDTO> saveCard(@PathVariable("id") String id,
+    public ResponseEntity<CardResponseDTO> updateCard(@PathVariable("id") String id,
                                                     @RequestBody CardRequestDTO cardRequestDTO) {
         return new ResponseEntity<>(cardService.update(id, cardRequestDTO), HttpStatus.ACCEPTED);
     }

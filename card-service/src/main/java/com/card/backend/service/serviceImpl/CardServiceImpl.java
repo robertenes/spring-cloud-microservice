@@ -1,6 +1,7 @@
 package com.card.backend.service.serviceImpl;
 
 import com.card.backend.exception.CardNotFoundException;
+import com.card.backend.message.RabbitMqSender;
 import com.card.backend.model.entity.CardEntity;
 import com.card.backend.model.converter.CardConverter;
 import com.card.backend.model.dto.CardRequestDTO;
@@ -10,13 +11,12 @@ import com.card.backend.repository.CardRepository;
 import com.card.backend.repository.es.CardElasticRepository;
 import com.card.backend.service.CardService;
 import com.common.backend.CustomerServiceClient;
+import com.common.backend.dto.CardNotification;
 import com.common.backend.dto.CustomerResponseDTO;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
 @Service
@@ -26,15 +26,18 @@ public class CardServiceImpl implements CardService {
     private final CardConverter cardConverter;
     private final CardElasticRepository cardElasticRepository;
     private final CustomerServiceClient customerServiceClient;
+    private final RabbitMqSender rabbitMqSender;
 
     public CardServiceImpl(final CardRepository cardRepository,
                            final CardConverter cardConverter,
                            final CardElasticRepository cardElasticRepository,
-                           final CustomerServiceClient customerServiceClient) {
+                           final CustomerServiceClient customerServiceClient,
+                           final RabbitMqSender rabbitMqSender) {
         this.cardRepository = cardRepository;
         this.cardConverter = cardConverter;
         this.cardElasticRepository = cardElasticRepository;
         this.customerServiceClient = customerServiceClient;
+        this.rabbitMqSender = rabbitMqSender;
     }
 
     @Override
@@ -45,8 +48,6 @@ public class CardServiceImpl implements CardService {
 
     @Override
     public List<CardResponseDTO> getAll() {
-
-
         return cardConverter.convertToListDTO(cardRepository.findAll());
     }
 
@@ -57,13 +58,16 @@ public class CardServiceImpl implements CardService {
         CardModel cardModel = cardConverter.convertToModel(cardEntity);
 
         ResponseEntity<CustomerResponseDTO> responseDTO = customerServiceClient.getCustomerByCustomerNumber(cardRequestDTO.getCustomerNumber());
-        if(!responseDTO.hasBody() || responseDTO.getBody() != null) {
+        if(!responseDTO.hasBody() || responseDTO.getBody() == null) {
             throw new ClassNotFoundException("Customer can not find!"); // değiştir
         }
         cardModel.setCustomerNameSurname(responseDTO.getBody().getFirstNameLastName());
         cardEntity = cardRepository.save(cardEntity);
         cardModel.setId(cardEntity.getId());
         cardElasticRepository.save(cardModel);
+
+        sendMessageRabbitMq(cardEntity.getId(), responseDTO.getBody().getCustomerNumber(),responseDTO.getBody().getFirstNameLastName() + "@hotmail.com");
+
         return cardConverter.convertToDTO(cardEntity);
     }
 
@@ -81,4 +85,8 @@ public class CardServiceImpl implements CardService {
         return cardConverter.convertToDTO(cardRepository.save(cardEntity));
     }
 
+    private void sendMessageRabbitMq(String cardId, String customerNumber, String customerMail) {
+        rabbitMqSender.send(new CardNotification(cardId, customerNumber, customerMail));
+        System.out.println("Message Send Success");
+    }
 }

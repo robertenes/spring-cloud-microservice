@@ -32,7 +32,12 @@
         <module>eureka-server</module>
 		<module>card-service</module>
         <module>service-common</module>
-    </modules>
+        <module>notification-service</module>
+		<module>mernis</module>
+		<module>zipkin-server</module>
+		<module>hystrix-dashboard</module>
+		<module>gateway-server</module>
+	</modules>
 
 	<dependencyManagement>
 		<dependencies>

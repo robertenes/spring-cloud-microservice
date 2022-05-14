@@ -15,12 +15,12 @@ import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.time.LocalDate;
 
-@Configuration
-@ComponentScan("com.common.backend")
+@Component
 public class InitialCreateDataConfig {
 
     private final CardService cardService;
@@ -29,16 +29,16 @@ public class InitialCreateDataConfig {
         this.cardService = cardService;
     }
 
-    @PostConstruct
-    public void init() {
-       /* CardRequestDTO cardRequestDTO = CardRequestDTO.builder()
+/*    @PostConstruct
+    public void init() throws ClassNotFoundException {
+        CardRequestDTO cardRequestDTO = CardRequestDTO.builder()
                 .cardNumber("1234566")
                 .cardType("Bank Card")
                 .expirationDate(LocalDate.now())
                 .securityCode("1234")
                 .build();
-        cardService.save(cardRequestDTO);*/
-    }
+        cardService.save(cardRequestDTO);
+    }*/
 
 //    @Bean
 //    CommandLineRunner createInitialCustomer() {
