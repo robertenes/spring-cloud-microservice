@@ -18,3 +18,4 @@ The project is a simple level rest service project created by customer and card 
 - Zipkin
 - Feign Client
 
+![diagram](https://user-images.githubusercontent.com/73203384/168475097-430678be-c814-4a41-9c9b-1b007966d50f.png)
