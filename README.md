@@ -4,6 +4,7 @@ The project is a simple level rest service project created by customer and card 
 
 ### Technologies:
 
+- Java 17
 - Spring Cloud
 - Spring Boot
 - Spring Gateway
