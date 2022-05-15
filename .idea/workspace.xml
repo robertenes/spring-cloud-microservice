@@ -5,70 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0235864f-c1cd-4d12-ad3b-a41e4e743ed0" name="Changes" comment="RabbitMq added, Hystrix added, Spring gateway added, notification service addded, zipkin server added">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mernis_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/Deneme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/Try.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/config/rabbitMqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/message/RabbitMqSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/notification-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/zipkin-server.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/gateway/backend/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/com/gateway/backend/HystrixController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/com/hystrix/backend/HystrixApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/MenisApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLDateTimeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLExtendedSoapSerializationEnvelope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLKPSPublicSoap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLKPSPublicSoap12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLMarshalGuid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mernis/src/main/java/com/mernis/backend/mernisAPI/GQLStandardDateTimeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification/backend/NotificationServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification/backend/config/RabbitMqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/notification/backend/service/NotificationDistributionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/dto/CardNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkin-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkin-server/src/main/java/com/zipkin/backend/ZipkinServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zipkin-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/978e88b1-3b06-4e58-af51-c3f3ca2c0a5f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/CardServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/CardServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/api/CardAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/config/InitialCreateDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/config/InitialCreateDataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/service/serviceImpl/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/java/com/card/backend/service/serviceImpl/CardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card-service/target/classes/com/card/backend/CardServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/card-service/target/classes/com/card/backend/CardServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/card-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/card-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/customer-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/eureka-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/microservice-config/eureka-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice-config/card-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice-config/card-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice-config/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice-config/customer-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/target/classes/microservice-config/eureka-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/microservice-config/eureka-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/CustomerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer-service/src/main/java/com/customer/backend/api/CustomerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/microserviceApp/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/eurekaserver/backend/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/microserviceApp/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/CustomerServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/CustomerServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/FeignClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/common/backend/config/FeignClientConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +276,7 @@
       <workItem from="1652097519489" duration="2436000" />
       <workItem from="1652182277008" duration="1736000" />
       <workItem from="1652424217994" duration="8673000" />
-      <workItem from="1652563274934" duration="1559000" />
+      <workItem from="1652563274934" duration="3795000" />
     </task>
     <task id="LOCAL-00001" summary="edited projec name">
       <created>1649634279990</created>
@@ -369,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650583931675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="RabbitMq added, Hystrix added, Spring gateway added, notification service addded, zipkin server added">
+      <created>1652567688101</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652567688101</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
